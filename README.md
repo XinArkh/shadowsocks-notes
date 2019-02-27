@@ -79,3 +79,9 @@ PAC 模式：根据 PAC 规则过滤需要经过 ss 转发的流量
 全局模式：所有流量均经过 ss 转发
 
 Windows 下有时 ss 未打开网页无法连接，这是因为 ss 关闭的时候没有恢复 Internet 属性中的代理服务器设置，可手动恢复（取消勾选 Internet 属性 > 连接 > 局域网设置 > 代理服务器 > `为 LAN 使用代理服务器`），或手动打开再关闭 ss 客户端来恢复设置。
+
+## 参考
+
+https://github.com/HuMoran/shadowsock-Manual
+
+https://github.com/pkuliubin/aws_shadowsocks
