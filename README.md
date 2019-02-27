@@ -64,9 +64,9 @@ chmod +x shadowsocks-libev-debian.sh
 
 ​	PAC 文件生成：[GenPAC](https://github.com/JinnLynn/genpac)
 
-$$
+```
 代理自动配置（英语：Proxy auto-config，简称PAC）是一种网页浏览器技术，用于定义浏览器该如何自动选择适当的代理服务器来访问一个网址
-$$
+```
 
 ​	Ubuntu 系统设置：依次点击 System settings > Network > Network Proxy，选择 Method 为 Automatic，设置 Configuration URL 为 生成的 .pac 文件的路径，点击 Apply System Wide。格式如：file:///home/{user}/autoproxy.pac
 
