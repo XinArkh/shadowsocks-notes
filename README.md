@@ -68,17 +68,17 @@ chmod +x shadowsocks-libev-debian.sh
 代理自动配置（英语：Proxy auto-config，简称PAC）是一种网页浏览器技术，用于定义浏览器该如何自动选择适当的代理服务器来访问一个网址
 ```
 
-​	Ubuntu 系统设置：依次点击 System settings > Network > Network Proxy，选择 Method 为 Automatic，设置 Configuration URL 为 生成的 .pac 文件的路径，点击 Apply System Wide。格式如：file:///home/{user}/autoproxy.pac
+​	Ubuntu 系统设置：依次点击 System settings > Network > Network Proxy，选择 Method 为 Automatic，设置 Configuration URL 为 生成的 .pac 文件的路径，点击 Apply System Wide。例如：file:///home/{user}/autoproxy.pac
 
 ​	参考：[Ubuntu 16安装shadowsocks-qt5并使用PAC全局代理](https://www.litcc.com/2016/12/29/Ubuntu16-shadowsocks-pac/index.html)
 
 ## 使用
 
-PAC 模式：根据 PAC 规则过滤需要经过 ss 转发的流量
+- PAC 模式：根据 PAC 规则过滤需要经过 ss 转发的流量
 
-全局模式：所有流量均经过 ss 转发
+- 全局模式：所有流量均经过 ss 转发
 
-Windows 下有时 ss 未打开网页无法连接，这是因为 ss 关闭的时候没有恢复 Internet 属性中的代理服务器设置，可手动恢复（取消勾选 Internet 属性 > 连接 > 局域网设置 > 代理服务器 > `为 LAN 使用代理服务器`），或手动打开再关闭 ss 客户端来恢复设置。
+Windows 下有时会遇到 ss 未打开时网页无法连接，这是因为 ss 在上一次关闭的时候没有恢复 Internet 属性中的代理服务器设置，可手动恢复（找到 Internet 属性 > 连接 > 局域网设置 > 代理服务器 > `为 LAN 使用代理服务器`，然后取消勾选），或手动重新打开再关闭一次 ss 客户端来尝试自动恢复。
 
 ## 参考
 
