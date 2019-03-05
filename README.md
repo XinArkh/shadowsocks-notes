@@ -2,6 +2,8 @@
 
 集成记录 shadowsocks 一些相关内容，包括概念、安装、使用等，避免频繁查阅。
 
+*注意：以下部分链接可能需要翻墙访问*
+
 ## 主要网站
 
 [官网](http://shadowsocks.org/en/index.html)（其实并非由原作者运营）
@@ -85,5 +87,3 @@ Windows 下有时会遇到 ss 未打开时网页无法连接，这是因为 ss �
 https://github.com/HuMoran/shadowsock-Manual
 
 https://github.com/pkuliubin/aws_shadowsocks
-
-*注意：以上部分链接可能需要翻墙访问*
