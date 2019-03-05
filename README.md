@@ -28,7 +28,7 @@
 
 ## 一点历史
 
- shadowsocks 的来源、作者被喝茶的经历、与 shadowsocksR 的关系等：
+ shadowsocks 的来源、作者被请喝茶的经历、与 shadowsocksR 的关系等：
 
 - [Shadowsocks 的前世后生](http://www.chinagfw.org/2016/08/shadowsocks_31.html)
 
@@ -85,3 +85,5 @@ Windows 下有时会遇到 ss 未打开时网页无法连接，这是因为 ss �
 https://github.com/HuMoran/shadowsock-Manual
 
 https://github.com/pkuliubin/aws_shadowsocks
+
+*注意：以上部分链接可能需要翻墙访问*
