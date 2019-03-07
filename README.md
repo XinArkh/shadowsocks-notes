@@ -42,7 +42,7 @@
 
 ​	*环境：Ubuntu + shadowsocks-libev*
 
-​	这里假设已经拥有一台海外线路的服务器，如AWS。
+​	这里假设已经拥有一台海外线路的服务器，如 AWS。
 
 ​	在服务器端使用[@teddysun](https://github.com/teddysun)的[一键安装脚本](https://teddysun.com/358.html)（shadowsocks-libev-debian.sh），复制以下命令至命令行：
 
