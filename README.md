@@ -70,6 +70,20 @@ chmod +x shadowsocks-libev-debian.sh
 代理自动配置（英语：Proxy auto-config，简称PAC）是一种网页浏览器技术，用于定义浏览器该如何自动选择适当的代理服务器来访问一个网址
 ```
 
+​	可通过 pip 来安装：
+
+```bash
+pip install -U genpac
+```
+
+​	安装完成之后在终端输入以下命令即可在当前目录下生成 pac 文件：
+
+```bash
+genpac --format=pac --pac-proxy="SOCKS5 127.0.0.1:1080" --output="autoproxy.pac"
+```
+
+​	一般情况下不需要添加`--gfwlist-url`参数。关于`gfwlist`：是一个网络防火墙屏蔽网站的网址列表，编码方式为 base64。genpac 默认使用[该项目](https://github.com/gfwlist/gfwlist)维护的列表。
+
 ​	Ubuntu 系统设置：依次点击 System settings > Network > Network Proxy，选择 Method 为 Automatic，设置 Configuration URL 为 生成的 .pac 文件的路径，点击 Apply System Wide。例如：file:///home/{user}/autoproxy.pac
 
 ​	参考：[Ubuntu 16安装shadowsocks-qt5并使用PAC全局代理](https://www.litcc.com/2016/12/29/Ubuntu16-shadowsocks-pac/index.html)
@@ -82,7 +96,7 @@ chmod +x shadowsocks-libev-debian.sh
 
 Windows 下有时会遇到 ss 未打开时网页无法连接，这是因为 ss 在上一次关闭的时候没有恢复 Internet 属性中的代理服务器设置，可手动恢复（找到 Internet 属性 > 连接 > 局域网设置 > 代理服务器 > `为 LAN 使用代理服务器`，然后取消勾选），或手动重新打开再关闭一次 ss 客户端来尝试自动恢复。
 
-## 参考
+## 服务器搭建可参考
 
 https://github.com/HuMoran/shadowsock-Manual
 
